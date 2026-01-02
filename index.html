@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangyomi | Desktop Manga Reader</title>
+    <meta name="description"
+        content="Read manga beautifully on your desktop. A Tachiyomi-style manga reader with library management, extensions, tracking, and more.">
+    <meta name="keywords" content="manga, reader, desktop, electron, tachiyomi, anilist, tracking">
+    <meta property="og:title" content="Mangyomi | Desktop Manga Reader">
+    <meta property="og:description"
+        content="Read manga beautifully on your desktop. A Tachiyomi-style manga reader with library management, extensions, tracking, and more.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/icon.svg" alt="Mangyomi" class="logo-icon">
+                <span class="logo-text">Mangyomi</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="https://github.com/Mangyomi/mangyomi-app" class="nav-link" target="_blank"
+                        rel="noopener">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="assets/icon.svg" alt="Mangyomi" class="hero-icon">
+            </div>
+            <h1 class="hero-title">
+                <span class="title-gradient">Mangyomi</span>
+            </h1>
+            <p class="hero-subtitle">
+                Read manga beautifully, on your desktop
+            </p>
+            <p class="hero-description">
+                A Tachiyomi-style manga reader built with Electron and React.
+                Discover and read manga from multiple sources with a smooth, customizable reading experience.
+            </p>
+            <div class="hero-cta">
+                <a href="https://github.com/Mangyomi/mangyomi-app#readme" class="btn btn-primary" target="_blank"
+                    rel="noopener">
+                    Get started
+                </a>
+                <a href="https://github.com/Mangyomi/mangyomi-app/releases/latest" class="btn btn-secondary"
+                    target="_blank" rel="noopener">
+                    Download
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Everything you need</h2>
+                <p class="section-subtitle">Powerful features for the ultimate manga reading experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Library Management</h3>
+                    <p class="feature-description">Organize your manga collection with tags, categories, and a beautiful
+                        grid view. Keep track of what you're reading.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Browse Sources</h3>
+                    <p class="feature-description">Search and discover manga from multiple sources via extensions. Find
+                        new series to read with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3 class="feature-title">Chapter Reader</h3>
+                    <p class="feature-description">Smooth reading experience with vertical scroll and page modes.
+                        Customize your reading preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📉</div>
+                    <h3 class="feature-title">AniList Tracking</h3>
+                    <p class="feature-description">Automatically sync your reading progress with AniList. Keep your
+                        lists up to date effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">Discord RPC</h3>
+                    <p class="feature-description">Show your current reading activity on Discord with rich presence. Let
+                        friends see what you're reading.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3 class="feature-title">Extension System</h3>
+                    <p class="feature-description">Install extensions directly from GitHub repositories. Bring your own
+                        content from various sources.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📥</div>
+                    <h3 class="feature-title">Downloads</h3>
+                    <p class="feature-description">Download chapters for offline reading. Read your favorite manga
+                        anytime, anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏷️</div>
+                    <h3 class="feature-title">Custom Tags</h3>
+                    <p class="feature-description">Organize manga with custom colored tags. Create your own
+                        categorization system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-title">Settings</h3>
+                    <p class="feature-description">Customize theme, reading preferences, and privacy options. Make
+                        Mangyomi truly yours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section class="opensource" id="opensource">
+        <div class="container">
+            <div class="opensource-content">
+                <h2 class="opensource-title">Open Source</h2>
+                <p class="opensource-description">
+                    Mangyomi is free and open source, licensed under GNU GPL v3.0.
+                    Contribute, report issues, or fork the project on GitHub.
+                </p>
+                <a href="https://github.com/Mangyomi/mangyomi-app" class="btn btn-github" target="_blank"
+                    rel="noopener">
+                    <svg class="github-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    View on GitHub
+                </a>
+                <div class="opensource-stats">
+                    <div class="stat">
+                        <span class="stat-icon">⭐</span>
+                        <span class="stat-label">Star the project</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">🐛</span>
+                        <span class="stat-label">Report issues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">🔧</span>
+                        <span class="stat-label">Contribute</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/icon.svg" alt="Mangyomi" class="footer-icon">
+                        <span>Mangyomi</span>
+                    </div>
+                    <p class="footer-tagline">Read manga beautifully, on your desktop</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://github.com/Mangyomi/mangyomi-app#readme" target="_blank"
+                            rel="noopener">Documentation</a>
+                        <a href="https://github.com/Mangyomi/mangyomi-app/releases" target="_blank"
+                            rel="noopener">Releases</a>
+                        <a href="https://github.com/Mangyomi/mangyomi-app/issues" target="_blank"
+                            rel="noopener">Issues</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Project</h4>
+                        <a href="https://github.com/Mangyomi/mangyomi-app" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://github.com/Mangyomi/mangyomi-app/blob/main/LICENSE" target="_blank"
+                            rel="noopener">License</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    Open-source <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank"
+                        rel="noopener">GPL-3.0 Licensed</a>
+                </p>
+                <p class="copyright">
+                    Copyright © 2026 Mangyomi
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
